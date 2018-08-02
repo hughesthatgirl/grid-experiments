@@ -16,6 +16,7 @@
 @import 'mixins/headings';
 @import 'mixins/margin-auto';
 @import 'mixins/row-widths';
+@import 'mixins/align-text';
 
 
 // ------------------------------------------
@@ -24,6 +25,12 @@
 @import 'layout/layout-container';
 @import 'layout/layout-row';
 @import 'layout/column-grid';
+
+
+// ------------------------------------------
+// Modules
+// ------------------------------------------
+@import 'modules/footer';
 
 
 // ------------------------------------------
@@ -37,3 +44,4 @@
 // ------------------------------------------
 @import 'utilities/background-color';
 @import 'utilities/text-color';
+@import 'utilities/text-align';

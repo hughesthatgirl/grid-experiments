@@ -1,0 +1,19 @@
+// ------------------------------------------
+// Change text alignment based on
+// breakpoint
+//-------------------------------------------
+@mixin align-at-size($breakpoint) {
+	&--#{$breakpoint} {
+		&-left {
+			text-align: left;
+		}
+		
+		&-right {
+			text-align: right;
+		}
+		
+		&-center {
+			text-align: center;
+		}
+	}
+}

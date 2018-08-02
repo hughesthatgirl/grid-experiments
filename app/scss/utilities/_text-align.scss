@@ -1,0 +1,39 @@
+// ------------------------------------------
+// Text Alignment
+// ------------------------------------------
+.text {
+    &--center {
+        text-align: center;
+    }
+
+    &--left {
+        text-align: left;
+    }
+
+    &--right {
+        text-align: right;
+    }
+
+    // ------------------------------------------
+    // Change text alignment based on
+    // breakpoint
+    //
+    // Example: text--md-center
+    //			text--lg-left
+    //-------------------------------------------
+    @include respond-to(small) {
+        @include align-at-size(sm);
+    }
+
+    @include respond-to(medium) {
+        @include align-at-size(md);
+    }
+
+    @include respond-to(large) {
+        @include align-at-size(lg);
+    }
+
+    @include respond-to(xlarge) {
+        @include align-at-size(xl);
+    }
+}

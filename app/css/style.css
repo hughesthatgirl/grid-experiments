@@ -31,7 +31,10 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 blockquote, q {
   quotes: none; }
@@ -168,6 +171,10 @@ p {
   .column-grid--item {
     min-width: 0;
     overflow: hidden; }
+
+footer {
+  margin: auto auto 0 auto;
+  width: 100%; }
 
 .card {
   display: grid;
@@ -338,3 +345,44 @@ p {
 
 .text--white {
   color: #ffffff; }
+
+.text--center {
+  text-align: center; }
+
+.text--left {
+  text-align: left; }
+
+.text--right {
+  text-align: right; }
+
+@media only screen and (min-width: 37.5em) {
+  .text--sm-left {
+    text-align: left; }
+  .text--sm-right {
+    text-align: right; }
+  .text--sm-center {
+    text-align: center; } }
+
+@media only screen and (min-width: 48em) {
+  .text--md-left {
+    text-align: left; }
+  .text--md-right {
+    text-align: right; }
+  .text--md-center {
+    text-align: center; } }
+
+@media only screen and (min-width: 64.0625em) {
+  .text--lg-left {
+    text-align: left; }
+  .text--lg-right {
+    text-align: right; }
+  .text--lg-center {
+    text-align: center; } }
+
+@media only screen and (min-width: 100em) {
+  .text--xl-left {
+    text-align: left; }
+  .text--xl-right {
+    text-align: right; }
+  .text--xl-center {
+    text-align: center; } }
