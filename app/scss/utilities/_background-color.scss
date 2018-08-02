@@ -1,0 +1,11 @@
+// ------------------------------------------
+// Example: background--blue
+//			background--orange
+// ------------------------------------------
+.background {
+	@each $colorname, $color in $colors {
+		&--#{$colorname}{
+			background-color: $color;
+		}
+	}
+}

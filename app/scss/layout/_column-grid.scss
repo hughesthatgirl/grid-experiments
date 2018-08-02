@@ -1,0 +1,65 @@
+// ------------------------------------------
+// Create different column layouts at different
+// breakpoints
+//
+// Example: column-grid--sm-2-col
+//          column-grid--md-3-col
+//          column-grid--lg-4-col
+//
+// Can add modifier classes to change the amount
+// of grid-gap or to remove it completely
+// ------------------------------------------
+.column-grid {
+	// border: 3px solid $pink;
+	@include grid-parent;
+	grid-gap: $space-default;
+	
+	&--2-col {
+		grid-template-columns: repeat(2, 1fr);
+	}
+		
+	&--3-col {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	&--4-col {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	@include respond-to(small){
+		@include create-columns(sm);
+	}
+	
+	@include respond-to(medium){
+		@include create-columns(md);
+	}
+	
+	@include respond-to(large){
+		@include create-columns(lg);
+	}
+	
+	@include respond-to(xlarge){
+		@include create-columns(xl);
+	}
+	
+	// Add Grid Gap to Grid Items
+	&.grid-gap {
+		&--less {
+			grid-gap: $space-less;
+		}
+		
+		&--more {
+			grid-gap: $space-more;
+		}
+		
+		&--none {
+			grid-gap: 0;
+		}
+	}
+	
+	// Grid Items
+	&--item {
+		// border: 3px solid $blue;
+		@include grid-item;
+	}
+}

@@ -1,0 +1,21 @@
+// ------------------------------------------
+// Creates a Grid Parent
+//
+// Example: @include grid-parent;
+// ------------------------------------------
+@mixin grid-parent {
+	display: grid;
+	grid-template-rows: auto;
+	min-height: 0;
+	min-width: 0;
+}
+
+// ------------------------------------------
+// Keeps grid items from breaking their container
+//
+// Example: @include grid-item;
+// ------------------------------------------
+@mixin grid-item {
+	min-width: 0;
+	overflow: hidden;
+}

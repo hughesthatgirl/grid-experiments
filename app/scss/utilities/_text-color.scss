@@ -1,0 +1,11 @@
+// ------------------------------------------
+// Example: text--blue
+//			text--orange
+// ------------------------------------------
+.text {
+	@each $colorname, $color in $colors {
+		&--#{$colorname}{
+			color: $color;
+		}
+	}
+}

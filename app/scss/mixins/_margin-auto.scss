@@ -1,0 +1,9 @@
+// ------------------------------------------
+// Left and right auto margins
+//
+// Example @include margin-auto;
+// ------------------------------------------
+@mixin margin-auto {
+	margin-left: auto;
+	margin-right: auto;
+}

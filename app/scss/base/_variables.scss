@@ -1,0 +1,39 @@
+// ------------------------------------------
+// Colors
+// ------------------------------------------
+$colors: (
+    pink: #d63043,
+    orange: #ff6f59,
+    blue: #40e0d0,
+    purple: #565299,
+    green: #58da4e,
+    gray: #cccccc,
+    dark-gray: #5d5d5d,
+    white: #ffffff
+);
+
+// ------------------------------------------
+// Spacing
+// ------------------------------------------
+$space-default: 24px;
+$space-less: calc(#{$space-default} / 2);
+$space-more: calc(#{$space-default} * 2);
+
+// ------------------------------------------
+// Breakpoints
+// ------------------------------------------
+$breakpoints: (
+	small: 37.5em, //600px
+	medium: 48em, // 768px
+	large: 64.0625em, // 1024px
+	xlarge: 100em, //1600px
+);
+
+// ------------------------------------------
+// Row Widths
+// ------------------------------------------
+$row-widths: (
+	base: 1024px,
+	narrow: 900px, 
+	wide: 1200px
+);

@@ -1,0 +1,10 @@
+// ------------------------------------------
+// Generate max-widths for rows
+//
+// Example: row-width(base)
+// ------------------------------------------
+@function row-width($width){
+    @if map-has-key($row-widths, $width){
+        @return map-get($row-widths, $width);
+    } 
+}

@@ -1,0 +1,17 @@
+// ------------------------------------------
+// Sets top and bottom padding
+// Sets default spacing between it's child elements
+// ------------------------------------------
+.layout-container {
+	// border: 3px solid $gray;
+	@include grid-parent;
+	grid-row-gap: $space-more;
+	padding-top: $space-more;
+	padding-bottom: $space-more;
+	text-align: center;
+	
+	&.no-padding {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}

@@ -1,0 +1,59 @@
+// ------------------------------------------
+// Sets left and right padding to contain
+// content within a layout-container
+//
+// Sets default spacing between it's child elements
+//
+// Can add modifier classes to set a max-width on the row
+// Can also create a full-width row that removes the left and right padding
+// ------------------------------------------
+.layout-row {
+	// border: 3px solid $green;
+	@include grid-item;
+	@include margin-auto;
+	padding-left: $space-default;
+	padding-right: $space-default;
+	width: 100%;
+	
+	&.full-width {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	&.max-width-base {
+		max-width: row-width(base);
+		
+		@media only screen and (min-width: calc(#{row-width(base)} + (#{$space-default} * 2))) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	
+	&.max-width-narrow {
+		max-width: row-width(narrow);
+		
+		@media only screen and (min-width: calc(#{row-width(narrow)} + (#{$space-default} * 2))) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	
+	&.max-width-wide {
+		max-width: row-width(wide);
+		
+		@media only screen and (min-width: calc(#{row-width(wide)} + (#{$space-default} * 2))) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	
+	> * + * {
+		margin-top: $space-default;
+	}
+	
+	@include headings(){
+		+ * {
+			margin-top: $space-less;
+		}
+	}
+}
