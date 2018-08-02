@@ -1,0 +1,29 @@
+{
+  "name": "grid-experiment",
+  "version": "1.0.0",
+  "description": "Vitamix CSS Grid Layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hughesthatgirl/grid-experiments.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hughesthatgirl/grid-experiments/issues"
+  },
+  "homepage": "https://github.com/hughesthatgirl/grid-experiments#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.0.2",
+    "browser-sync": "^2.24.6",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.0.5",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "postcss-assets": "^5.0.0"
+  }
+}
