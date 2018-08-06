@@ -1,9 +1,12 @@
 {
-  "list": [{
-    "content": "item one"
-  }, {
-    "content": "item two"
-  }, {
-    "content": "item three"
-  }]
+    "heading": "this is a heading",
+    "content": "this is some content",
+    "items": [
+        {
+        "content": "item one"
+        }, 
+        {
+        "content": "item two"
+        }
+    ]
 }

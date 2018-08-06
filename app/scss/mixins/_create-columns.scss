@@ -2,9 +2,9 @@
 // Create different column layouts at different
 // breakpoints
 //
-// Example: column-grid--sm-2-col
-//          column-grid--md-3-col
-//          column-grid--lg-4-col
+// Example: column-grid-sm--2-col
+//          column-grid-md--3-col
+//          column-grid-lg--4-col
 // ------------------------------------------
 @mixin create-columns($breakpoint){
 	&-#{$breakpoint} {

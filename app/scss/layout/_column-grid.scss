@@ -2,9 +2,9 @@
 // Create different column layouts at different
 // breakpoints
 //
-// Example: column-grid--sm-2-col
-//          column-grid--md-3-col
-//          column-grid--lg-4-col
+// Example: column-grid-sm--2-col
+//          column-grid-md--3-col
+//          column-grid-lg--4-col
 //
 // Can add modifier classes to change the amount
 // of grid-gap or to remove it completely
@@ -59,7 +59,7 @@
 	
 	// Grid Items
 	&--item {
-		// border: 3px solid $blue;
+        border: 3px solid color(blue);
 		@include grid-item;
 	}
 }

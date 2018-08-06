@@ -177,6 +177,7 @@ p {
   .column-grid.grid-gap--none {
     grid-gap: 0; }
   .column-grid--item {
+    border: 3px solid #40e0d0;
     min-width: 0;
     overflow: hidden; }
 
