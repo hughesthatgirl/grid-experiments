@@ -5,7 +5,7 @@
         <p>{{ content }}</p>
         <div class="column-grid column-grid-md--2-col">
             {% for item in items %}
-            <div class="column-grid--item">{{ item.content }}</div>
+            <div class="column-grid--item">{% block item %}{% endblock %}</div>
             {% endfor %}
         </div>
     </div>

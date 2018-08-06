@@ -3,10 +3,12 @@
     "content": "this is some content",
     "items": [
         {
-        "content": "item one"
+        "heading": "This is a heading for a column",
+        "content": "This is some content about this item"
         }, 
         {
-        "content": "item two"
+        "heading": "This is a heading for a column",
+        "content": "This is some content about this item"
         }
     ]
 }
