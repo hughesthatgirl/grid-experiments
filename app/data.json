@@ -9,6 +9,10 @@
         {
         "heading": "This is a heading for a column",
         "content": "This is some content about this item"
+        },
+        {
+        "heading": "This is a heading for a column",
+        "content": "This is some content about this item"
         }
     ]
 }
