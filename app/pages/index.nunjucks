@@ -1,0 +1,10 @@
+<!-- homepage -->
+{% extends "master.nunjucks" %}
+{% block content %}
+   {% include "partials/header.nunjucks" %}
+   <ul class="gallery">
+   {% for item in list %}
+        <li class="gallery-item">{{item.content}}</li>
+    {% endfor %}
+   </ul>
+{% endblock %}
