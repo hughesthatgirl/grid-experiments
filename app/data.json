@@ -1,14 +1,1 @@
-{
-    "heading": "this is a heading",
-    "content": "this is some content",
-    "items": [
-        {
-        "heading": "This is a heading for column 1",
-        "content": "This is some content about this item"
-        }, 
-        {
-        "heading": "This is a heading for column 2",
-        "content": "This is some content about this item"
-        }
-    ]
-}
+{}

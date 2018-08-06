@@ -1,5 +1,9 @@
 {% extends "partials/layout-two-column.html" %}
 {% block item %}
-    <h3>{{ item.heading }}</h3>
-    <p>{{ item.content }}</p>
-{% endblock %}
+    {% if item.heading %}
+        <h3>{{ item.heading }}</h3>
+    {% endif %}
+    {% if item.content %}
+        <p>{{ item.content }}</p>
+    {% endif %}
+{% endblock %}å

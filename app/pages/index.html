@@ -1,5 +1,44 @@
 <!-- homepage -->
 {% extends "master.html" %}
+
+{% set page_title = "CSS_Grid | Homepage Example" %}
+
 {% block content %}
-    {% include "partials/layout-two-column--content.html" %}
+{% set heading = "This is a heading" %}
+{% set items = [
+    {
+      "heading"  : "Column 1",
+      "content" : "Column 1 content"
+    },
+    {
+      "heading"  : "Column 2",
+      "content" : "Column 2 content"
+    },
+    {
+      "heading"  : "Column 3",
+      "content" : "Column 3 content"
+    },
+    {
+      "heading"  : "Column 4",
+      "content" : "Column 4 content"
+    }
+  ]
+%}
+{% include "partials/layout-two-column--content.html" %}
+
+{% set heading = "This is another heading" %}
+{% set content = "This section has content after the heading" %}
+{% set items = [
+    {
+      "heading"  : "Column 1",
+      "content" : "Column 1 content"
+    },
+    {
+      "heading"  : "Column 2",
+      "content" : "Column 2 content"
+    }
+  ]
+%}
+{% include "partials/layout-two-column--content.html" %}
+
 {% endblock %}
