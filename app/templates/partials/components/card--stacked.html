@@ -1,0 +1,11 @@
+{% extends "partials/components/card.html" %}
+
+{% set card_type = "stacked" %}
+
+{% block card_item_1 %}
+    <img class="card--img" src="{{ item.image_path }}" alt="{{ item.alt }}">
+{% endblock %}
+
+{% block card_item_2 %}
+    {% include "partials/components/card-content.html" %}
+{% endblock %}

@@ -48,15 +48,23 @@
 {% set text_color = "dark-gray" %}
 {% set items = [
     {
-      "heading"  : "Column 1",
-      "content" : "Column 1 content"
+      "image_path" : "https://picsum.photos/1200/400",
+      "alt" : "alt text",
+      "card_title" : "This is the card title",
+      "card_content" : "This is the card content",
+      "card_link_url" : "#",
+      "card_button" : "Button Text"
     },
     {
-      "heading"  : "Column 2",
-      "content" : "Column 2 content"
+      "image_path" : "https://picsum.photos/1200/400",
+      "alt" : "alt text",
+      "card_title" : "This is the card title",
+      "card_content" : "This is the card content",
+      "card_link_url" : "#",
+      "card_button" : "Button Text"
     }
   ]
 %}
-{% include "partials/layout-two-column--content.html" %}
+{% include "partials/layout-two-column--stacked-cards.html" %}
 
 {% endblock %}
