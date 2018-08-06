@@ -8,7 +8,7 @@
 // Can also create a full-width row that removes the left and right padding
 // ------------------------------------------
 .layout-row {
-	// border: 3px solid $green;
+    border: 3px solid color(green);
 	@include grid-item;
 	@include margin-auto;
 	padding-left: $space-default;
