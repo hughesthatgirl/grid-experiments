@@ -5,15 +5,9 @@ var browserSync = require('browser-sync').create();
 var nunjucksRender = require('gulp-nunjucks-render');
 var data = require('gulp-data');
 
-
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: 'app'
-    },
-  })
-})
-
+// ------------------------------------------
+// Sass
+// ------------------------------------------
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
     .pipe(sass())
@@ -23,6 +17,9 @@ gulp.task('sass', function() {
     }))
 });
 
+// ------------------------------------------
+// Templates
+// ------------------------------------------
 gulp.task('templates', function() {
   return gulp.src('app/pages/**/*.+(html|nunjucks)')
     // Adding data to Nunjucks
@@ -35,7 +32,21 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('app'))
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function (){
+// ------------------------------------------
+// Static Server - Page Reload
+// ------------------------------------------
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    },
+  })
+})
+
+// ------------------------------------------
+// Watch Tasks
+// ------------------------------------------
+gulp.task('watch', ['browserSync', 'sass', 'templates'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']); 
   // Reloads the browser whenever our HTML files change
   gulp.watch('app/*.html', browserSync.reload); 

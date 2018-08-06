@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        {% include "partials/header.nunjucks" %}
         <main>
         {% block content %} {% endblock %}
         </main>
+        {% include "partials/footer.nunjucks" %}
     </body>
 </html>
