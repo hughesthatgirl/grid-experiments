@@ -26,8 +26,26 @@
 %}
 {% include "partials/layout-two-column--content.html" %}
 
+{% set bg_color = "gray" %}
+{% set text_color = "white" %}
 {% set heading = "This is another heading" %}
 {% set content = "This section has content after the heading" %}
+{% set items = [
+    {
+      "heading"  : "Column 1",
+      "content" : ""
+    },
+    {
+      "heading"  : "Column 2",
+      "content" : ""
+    }
+  ]
+%}
+{% include "partials/layout-two-column--content.html" %}
+
+
+{% set bg_color = "white" %}
+{% set text_color = "dark-gray" %}
 {% set items = [
     {
       "heading"  : "Column 1",
