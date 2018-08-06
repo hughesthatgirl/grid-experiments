@@ -1,6 +1,6 @@
 <!-- homepage -->
 {% extends "master.nunjucks" %}
 {% block content %}
-    <h1>did this change</h1>
+    <h1>heading changed</h1>
    <!-- place modules here -->
 {% endblock %}

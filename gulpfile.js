@@ -47,7 +47,8 @@ gulp.task('browserSync', function() {
 // Watch Tasks
 // ------------------------------------------
 gulp.task('watch', ['browserSync', 'sass', 'templates'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']); 
-  // Reloads the browser whenever our HTML files change
-  gulp.watch('app/*.html', browserSync.reload); 
+    gulp.watch('app/scss/**/*.scss', ['sass']);
+    gulp.watch('app/pages/**/*.+(html|nunjucks)', ['templates'])
+    // Reloads the browser whenever our HTML files change
+    gulp.watch('app/*.html', browserSync.reload);
 });
