@@ -1,0 +1,15 @@
+{% extends "partials/components/card.njk" %}
+
+{% set card_type = "switch" %}
+
+{% block card_item_1 %}
+    <div class="card--content">
+        <div class="card--title">{{ card_title }}</div>
+        <p class="card--snippet">{{ card_content }}</p>
+        <a class="card--button" href="{{ card_link_url }}">{{ card_button }}</a>
+    </div> 
+{% endblock %}
+
+{% block card_item_2 %}
+    <img class="card--img" src="{{ image_path }}" alt="{{ alt }}">
+{% endblock %}

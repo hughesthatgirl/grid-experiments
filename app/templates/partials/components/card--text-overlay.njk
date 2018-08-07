@@ -1,0 +1,11 @@
+{% extends "partials/components/card.njk" %}
+
+{% set card_type = "text-overlay" %}
+
+{% block card_item_1 %}
+    <img class="card--img" src="{{ item.image_path }}" alt="{{ item.alt }}">
+{% endblock %}
+
+{% block card_item_2 %}
+    {% include "partials/components/card-content.njk" %}
+{% endblock %}

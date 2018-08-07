@@ -1,4 +1,5 @@
-{% extends "partials/layouts/layout-two-column.njk" %}
+{% extends "partials/layouts/layout-column-grid.njk" %}
+{% set column_classes = "md--2-col" %}
 {% block item %}
     {% if item.heading %}
         <h3>{{ item.heading }}</h3>
