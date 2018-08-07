@@ -10,7 +10,7 @@
 // of grid-gap or to remove it completely
 // ------------------------------------------
 .column-grid {
-    border: 3px solid color(pink);
+//    border: 3px solid color(pink);
 	@include grid-parent;
 	grid-gap: $space-default;
 	
@@ -59,7 +59,7 @@
 	
 	// Grid Items
 	&--item {
-        border: 3px solid color(blue);
+//        border: 3px solid color(blue);
 		@include grid-item;
 	}
 }
