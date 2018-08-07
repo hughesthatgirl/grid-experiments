@@ -3,7 +3,7 @@
     <div class="layout-row max-width-{{ row_width }}">
         <h2>{{ heading }}</h2>
         <p>{{ content }}</p>
-        <div class="column-grid column-grid-md--2-col">
+        <div class="column-grid column-grid-md--2-col grid-gap--{{ grid_gap_size }}">
             {% for item in items %}
                 <div class="column-grid--item">{% block item %}{% endblock %}</div>
             {% endfor %}

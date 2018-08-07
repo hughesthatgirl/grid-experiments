@@ -331,6 +331,9 @@ footer {
 .background--white {
   background-color: #ffffff; }
 
+.background--black {
+  background-color: #000000; }
+
 .text--pink {
   color: #d63043; }
 
@@ -354,6 +357,9 @@ footer {
 
 .text--white {
   color: #ffffff; }
+
+.text--black {
+  color: #000000; }
 
 .text--center {
   text-align: center; }
