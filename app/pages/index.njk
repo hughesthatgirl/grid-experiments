@@ -1,5 +1,5 @@
 <!-- homepage -->
-{% extends "master.html" %}
+{% extends "master.njk" %}
 
 {% set page_title = "CSS_Grid | Homepage Example" %}
 
@@ -24,7 +24,7 @@
     }
   ]
 %}
-{% include "partials/layout-two-column--content.html" %}
+{% include "partials/layout-two-column--content.njk" %}
 
 {% set bg_color = "gray" %}
 {% set text_color = "white" %}
@@ -41,7 +41,7 @@
     }
   ]
 %}
-{% include "partials/layout-two-column--content.html" %}
+{% include "partials/layout-two-column--content.njk" %}
 
 
 {% set bg_color = "white" %}
@@ -65,6 +65,6 @@
     }
   ]
 %}
-{% include "partials/layout-two-column--stacked-cards.html" %}
+{% include "partials/layout-two-column--stacked-cards.njk" %}
 
 {% endblock %}

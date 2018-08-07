@@ -21,7 +21,7 @@ gulp.task('sass', function() {
 // Templates
 // ------------------------------------------
 gulp.task('templates', function() {
-  return gulp.src('app/pages/**/*.+(html|nunjucks)')
+  return gulp.src('app/pages/**/*.+(html|njk)')
     // Adding data to Nunjucks
     .pipe(data(function() {
       return require('./app/data.json')
@@ -48,7 +48,7 @@ gulp.task('browserSync', function() {
 // ------------------------------------------
 gulp.task('watch', ['browserSync', 'sass', 'templates'], function (){
     gulp.watch('app/scss/**/*.scss', ['sass']);
-    gulp.watch('app/**/*.+(html)', ['templates']);
+    gulp.watch('app/**/*.+(html|njk)', ['templates']);
     // Reloads the browser whenever our HTML files change
     gulp.watch('app/*.html', browserSync.reload);
 });
