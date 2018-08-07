@@ -13,4 +13,8 @@ This project is using Gulp, Sass, BrowserSync and the Nunjucks templating engine
 While `gulp watch` is running, BrowserSync will automatically detect changes to `.scss`, `.html`, and `.njk` files.
 When a change is detected, the browser will automatically update with your updates. 
 
+###
+Nunjucks Templating Documentation
+https://mozilla.github.io/nunjucks/templating.html
+
 
