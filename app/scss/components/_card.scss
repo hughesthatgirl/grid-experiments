@@ -2,7 +2,7 @@
 // Card Styles
 // --------------------------------------------------------
 .card {
-	// border: 5px solid $purple;
+    border: 5px solid color(black);
 	@include grid-parent;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	text-align: center;
