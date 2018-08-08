@@ -1,0 +1,9 @@
+{% extends "partials/layouts/layout-container.njk" %}
+{% block content %}
+    <div class="layout-row max-width-{{ row_width }} {{ full_width_class }}">
+        <h{{heading_type}}>{{ row_heading }}</h{{heading_type}}>
+        {% for paragraph in paragraphs %}
+            <p>{{ paragraph.text }}</p>
+        {% endfor %}
+    </div>
+{% endblock %}

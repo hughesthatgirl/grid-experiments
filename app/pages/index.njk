@@ -4,7 +4,28 @@
 {% set page_title = "CSS_Grid | Homepage Example" %}
 
 {% block content %}
+{% set bg_color = "gray" %}
+{% set text_color = "white" %}
+{% set row_width = "narrow" %}
+{% set heading_type = "1" %}
+{% set row_heading = "This is an h1" %}
+{% set paragraphs = [
+    {
+      "text"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "text"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    }
+  ]
+%}
+{% include "partials/modules/module--text.njk" %}
+
+
+<!-- 3 Column Content Module -->
+{% set bg_color = "white" %}
+{% set text_color = "black" %}
 {% set row_width = "wide" %}
+{% set column_classes = "md--3-col" %}
 {% set column_heading = "This is a heading" %}
 {% set items = [
     {
@@ -18,18 +39,16 @@
     {
       "heading"  : "Column 3",
       "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    },
-    {
-      "heading"  : "Column 4",
-      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
     }
   ]
 %}
-{% include "partials/modules/module-two-column--content.njk" %}
+{% include "partials/modules/module-columns--content.njk" %}
 
+<!-- 2 Column Content Module -->
 {% set bg_color = "gray" %}
 {% set text_color = "white" %}
 {% set row_width = "base" %}
+{% set column_classes = "md--2-col" %}
 {% set column_heading = "This is another heading" %}
 {% set column_content = "This section has content after the heading" %}
 {% set items = [
@@ -43,9 +62,11 @@
     }
   ]
 %}
-{% include "partials/modules/module-two-column--content.njk" %}
+{% include "partials/modules/module-columns--content.njk" %}
 
+<!-- 3 Column Card Module -->
 {% set row_width = "wide" %}
+{% set column_classes = "md--3-col" %}
 {% set bg_color = "white" %}
 {% set text_color = "black" %}
 {% set items = [
@@ -64,9 +85,31 @@
       "card_content" : "This is the card content",
       "card_link_url" : "#",
       "card_button" : "Button Text"
+    },
+    {
+      "image_path" : "https://picsum.photos/1200/400",
+      "alt" : "alt text",
+      "card_title" : "This is the card title",
+      "card_content" : "This is the card content",
+      "card_link_url" : "#",
+      "card_button" : "Button Text"
     }
   ]
 %}
-{% include "partials/modules/module-two-column--stacked-cards.njk" %}
+{% include "partials/modules/module-columns--stacked-cards.njk" %}
+
+{% set bg_color = "gray" %}
+{% set text_color = "white" %}
+{% set text_align = "left" %}
+{% set row_width = "narrow" %}
+{% set heading_type = "2" %}
+{% set row_heading = "This is an h2" %}
+{% set paragraphs = [
+    {
+      "text"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    }
+  ]
+%}
+{% include "partials/modules/module--text.njk" %}
 
 {% endblock %}
