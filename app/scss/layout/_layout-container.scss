@@ -3,7 +3,7 @@
 // Sets default spacing between it's child elements
 // ------------------------------------------
 .layout-container {
-    border: 3px solid color(orange);
+//    border: 3px solid color(orange);
 	@include grid-parent;
 	grid-row-gap: $space-more;
 	padding-top: $space-more;

@@ -4,37 +4,69 @@
 {% set page_title = "CSS_Grid | Homepage Example" %}
 
 {% block content %}
+{% set row_width = "wide" %}
+{% set column_heading = "This is a heading" %}
+{% set items = [
+    {
+      "heading"  : "Column 1",
+      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "heading"  : "Column 2",
+      "content" : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "heading"  : "Column 3",
+      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "heading"  : "Column 4",
+      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    }
+  ]
+%}
+{% include "partials/modules/module-two-column--content.njk" %}
 
-{% set image_path_1 = "https://picsum.photos/1200/400" %}
-{% set alt_1 = "photo one" %}
-{% set image_path_2 = "https://picsum.photos/g/1200/400" %}
-{% set alt_2 = "photo two" %}
-{% include "partials/components/card--side-by-side-image.njk" %}
+{% set bg_color = "gray" %}
+{% set text_color = "white" %}
+{% set row_width = "base" %}
+{% set column_heading = "This is another heading" %}
+{% set column_content = "This section has content after the heading" %}
+{% set items = [
+    {
+      "heading"  : "Column 1",
+      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+      "heading"  : "Column 2",
+      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    }
+  ]
+%}
+{% include "partials/modules/module-two-column--content.njk" %}
 
-{% set card_title_1 = "Card One Heading" %}
-{% set card_content_1 = "Content for the first card" %}
-{% set card_link_url_1 = "#" %}
-{% set card_button_1 = "Buy some blenders" %}
-{% set card_title_2 = "Card Two Heading" %}
-{% set card_content_2 = "Content for the first card" %}
-{% set card_link_url_2 = "#" %}
-{% set card_button_2 = "Get blender Knowledge" %}
-{% include "partials/components/card--side-by-side-text.njk" %}
-
-{% set image_path = "https://picsum.photos/1200/400" %}
-{% set alt = "photo one" %}
-{% set card_title = "Card Heading" %}
-{% set card_content = "Content for the card" %}
-{% set card_link_url = "#" %}
-{% set card_button = "Buy Now" %}
-{% include "partials/components/card--text-left-img-right.njk" %}
-
-{% set image_path = "https://picsum.photos/1200/400" %}
-{% set alt = "photo one" %}
-{% set card_title = "Card Heading" %}
-{% set card_content = "Content for the card" %}
-{% set card_link_url = "#" %}
-{% set card_button = "Buy Now" %}
-{% include "partials/components/card--text-right-img-left.njk" %}
+{% set row_width = "wide" %}
+{% set bg_color = "white" %}
+{% set text_color = "black" %}
+{% set items = [
+    {
+      "image_path" : "https://picsum.photos/1200/400",
+      "alt" : "alt text",
+      "card_title" : "This is the card title",
+      "card_content" : "This is the card content",
+      "card_link_url" : "#",
+      "card_button" : "Button Text"
+    },
+    {
+      "image_path" : "https://picsum.photos/1200/400",
+      "alt" : "alt text",
+      "card_title" : "This is the card title",
+      "card_content" : "This is the card content",
+      "card_link_url" : "#",
+      "card_button" : "Button Text"
+    }
+  ]
+%}
+{% include "partials/modules/module-two-column--stacked-cards.njk" %}
 
 {% endblock %}

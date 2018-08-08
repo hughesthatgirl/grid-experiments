@@ -71,7 +71,6 @@ p {
   font-size: 1.125rem; }
 
 .layout-container {
-  border: 3px solid #ff6f59;
   display: grid;
   grid-template-rows: auto;
   min-height: 0;
@@ -85,7 +84,6 @@ p {
     padding-bottom: 0; }
 
 .layout-row {
-  border: 3px solid #58da4e;
   min-width: 0;
   overflow: hidden;
   margin-left: auto;
@@ -130,7 +128,6 @@ p {
     margin-top: calc(24px / 2); }
 
 .column-grid {
-  border: 3px solid #d63043;
   display: grid;
   grid-template-rows: auto;
   min-height: 0;
@@ -186,6 +183,7 @@ footer {
   width: 100%; }
 
 .card {
+  border: 5px solid #000000;
   display: grid;
   grid-template-rows: auto;
   min-height: 0;
