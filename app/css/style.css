@@ -184,7 +184,7 @@ footer {
 
 .hero--image picture,
 .hero--image img {
-  height: auto;
+  height: 100%;
   object-fit: cover;
   width: 100%; }
 

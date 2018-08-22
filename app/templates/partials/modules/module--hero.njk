@@ -1,4 +1,4 @@
-<div class="hero card card--text-overlay content--{{width}} content--{{position}}">
+<div class="hero card card--text-overlay content--{{content_width}} content--{{content_position}}">
     <div class="card--item card--item-1">
         <div class="card--content">
             <div class="card--title">{{ editable_BCC_hero_heading }}</div>
@@ -8,10 +8,10 @@
     </div>
     <div class="hero--image card--item card--item-2">
         <picture>
-            <source media="(max-width: 799px)" srcset="https://picsum.photos/800/800">
-            <source media="(min-width: 800px)" srcset="https://picsum.photos/1200/400">
-            <source media="(min-width: 1200px)" srcset="https://picsum.photos/1600/400">
-            <img src="https://picsum.photos/1600/400" alt="the default image">
+            <source media="(max-width: 768px)" srcset="{{ editable_BCC_hero_img_small }}">
+            <source media="(max-width: 1024px)" srcset="{{ editable_BCC_hero_img_medium }}">
+            <source media="(min-width: 1600px)" srcset="{{ editable_BCC_hero_img_large_default }}">
+            <img src="{{ editable_BCC_hero_img_large_default }}" alt="{{ editable_BCC_hero_alt }}">
         </picture>
     </div>
 </div>
