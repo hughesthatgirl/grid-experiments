@@ -182,14 +182,16 @@ footer {
   margin: auto auto 0 auto;
   width: 100%; }
 
-.hero--image picture,
-.hero--image img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%; }
-
-.hero--image picture {
-  line-height: 0; }
+.hero {
+  max-height: 400px;
+  overflow: hidden; }
+  .hero--image picture,
+  .hero--image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%; }
+  .hero--image picture {
+    line-height: 0; }
 
 .card {
   border: 5px solid #000000;

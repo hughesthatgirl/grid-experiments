@@ -1,4 +1,7 @@
 .hero {
+    max-height: 400px;
+    overflow: hidden;
+    
     &--image {
         picture,
         img {
