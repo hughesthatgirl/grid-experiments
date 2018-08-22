@@ -4,17 +4,17 @@
 {% set page_title = "CSS_Grid | Homepage Example" %}
 
 {% block content %}
-{% set bg_color = "gray" %}
-{% set text_color = "white" %}
+{% set editable_BCC_bg_color = "gray" %}
+{% set editable_BCC_text_color = "white" %}
 {% set row_width = "narrow" %}
-{% set heading_type = "1" %}
-{% set row_heading = "This is an h1" %}
+{% set editable_BCC_heading_type = "1" %}
+{% set editable_BCC_row_heading = "This is an h1" %}
 {% set paragraphs = [
     {
-      "text"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "editable_BCC_text"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
-      "text"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      "editable_BCC_text"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     }
   ]
 %}
@@ -22,43 +22,43 @@
 
 
 <!-- 3 Column Content Module -->
-{% set bg_color = "white" %}
-{% set text_color = "black" %}
+{% set editable_BCC_bg_color = "white" %}
+{% set editable_BCC_text_color = "black" %}
 {% set row_width = "wide" %}
 {% set column_classes = "md--3-col" %}
-{% set column_heading = "This is a heading" %}
+{% set editable_BCC_column_heading = "This is a heading" %}
 {% set items = [
     {
-      "heading"  : "Column 1",
-      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      "editable_BCC_heading"  : "Column 1",
+      "editable_BCC_content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
-      "heading"  : "Column 2",
-      "content" : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      "editable_BCC_heading"  : "Column 2",
+      "editable_BCC_content" : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
-      "heading"  : "Column 3",
-      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "editable_BCC_heading"  : "Column 3",
+      "editable_BCC_content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     }
   ]
 %}
 {% include "partials/modules/module-columns--content.njk" %}
 
 <!-- 2 Column Content Module -->
-{% set bg_color = "gray" %}
-{% set text_color = "white" %}
+{% set editable_BCC_bg_color = "gray" %}
+{% set editable_BCC_text_color = "white" %}
 {% set row_width = "base" %}
 {% set column_classes = "md--2-col" %}
-{% set column_heading = "This is another heading" %}
-{% set column_content = "This section has content after the heading" %}
+{% set editable_BCC_column_heading = "This is another heading" %}
+{% set editable_BCC_column_content = "This section has content after the heading" %}
 {% set items = [
     {
-      "heading"  : "Column 1",
-      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      "editable_BCC_heading"  : "Column 1",
+      "editable_BCC_content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
     },
     {
-      "heading"  : "Column 2",
-      "content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      "editable_BCC_heading"  : "Column 2",
+      "editable_BCC_content" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
     }
   ]
 %}
@@ -67,46 +67,46 @@
 <!-- 3 Column Card Module -->
 {% set row_width = "wide" %}
 {% set column_classes = "md--3-col" %}
-{% set bg_color = "white" %}
-{% set text_color = "black" %}
+{% set editable_BCC_bg_color = "white" %}
+{% set editable_BCC_text_color = "black" %}
 {% set items = [
     {
-      "image_path" : "https://picsum.photos/1200/400",
-      "alt" : "alt text",
-      "card_title" : "This is the card title",
-      "card_content" : "This is the card content",
-      "card_link_url" : "#",
-      "card_button" : "Button Text"
+      "editable_BCC_image_path" : "https://picsum.photos/1200/400",
+      "editable_BCC_alt" : "alt text",
+      "editable_BCC_card_title" : "This is the card title",
+      "editable_BCC_card_content" : "This is the card content",
+      "editable_BCC_card_link_url" : "#",
+      "editable_BCC_card_button" : "Button Text"
     },
     {
-      "image_path" : "https://picsum.photos/1200/400",
-      "alt" : "alt text",
-      "card_title" : "This is the card title",
-      "card_content" : "This is the card content",
-      "card_link_url" : "#",
-      "card_button" : "Button Text"
+      "editable_BCC_image_path" : "https://picsum.photos/1200/400",
+      "editable_BCC_alt" : "alt text",
+      "editable_BCC_card_title" : "This is the card title",
+      "editable_BCC_card_content" : "This is the card content",
+      "editable_BCC_card_link_url" : "#",
+      "editable_BCC_card_button" : "Button Text"
     },
     {
-      "image_path" : "https://picsum.photos/1200/400",
-      "alt" : "alt text",
-      "card_title" : "This is the card title",
-      "card_content" : "This is the card content",
-      "card_link_url" : "#",
-      "card_button" : "Button Text"
+      "editable_BCC_image_path" : "https://picsum.photos/1200/400",
+      "editable_BCC_alt" : "alt text",
+      "editable_BCC_card_title" : "This is the card title",
+      "editable_BCC_card_content" : "This is the card content",
+      "editable_BCC_card_link_url" : "#",
+      "editable_BCC_card_button" : "Button Text"
     }
   ]
 %}
 {% include "partials/modules/module-columns--stacked-cards.njk" %}
 
-{% set bg_color = "gray" %}
-{% set text_color = "white" %}
-{% set text_align = "left" %}
+{% set editable_BCC_bg_color = "gray" %}
+{% set editable_BCC_text_color = "white" %}
+{% set editable_BCC_text_align = "left" %}
 {% set row_width = "narrow" %}
-{% set heading_type = "2" %}
-{% set row_heading = "This is an h2" %}
+{% set editable_BCC_heading_type = "2" %}
+{% set editable_BCC_row_heading = "This is an h2" %}
 {% set paragraphs = [
     {
-      "text"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      "editable_BCC_text"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     }
   ]
 %}

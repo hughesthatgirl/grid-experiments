@@ -1,8 +1,8 @@
 {% extends "partials/layouts/layout-container.njk" %}
 {% block content %}
     <div class="layout-row max-width-{{ row_width }} {{ full_width_class }}">
-        <h2>{{column_heading}}</h2>
-        <p>{{column_content}}</p>
+        <h2>{{editable_BCC_column_heading}}</h2>
+        <p>{{editable_BCC_column_content}}</p>
         <div class="column-grid column-grid-{{ column_classes }} grid-gap--{{ grid_gap_size }}">
             {% for item in items %}
                 <div class="column-grid--item">{% block item %}{% endblock %}</div>
