@@ -1,0 +1,14 @@
+.hero {
+    &--image {
+        picture,
+        img {
+            height: auto;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        picture {
+            line-height: 0;
+        }
+    }
+}
