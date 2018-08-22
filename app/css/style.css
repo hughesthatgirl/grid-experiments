@@ -252,35 +252,35 @@ footer {
         text-align: right; }
         .card--item.align-self--right > .card--content {
           align-items: flex-end; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 48em) {
     .card.content--left .card--item {
       justify-content: flex-start;
       text-align: left; }
       .card.content--left .card--item > .card--content {
         align-items: flex-start; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 48em) {
     .card.content--right .card--item {
       justify-content: flex-end;
       text-align: right; }
       .card.content--right .card--item > .card--content {
         align-items: flex-end; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 48em) {
     .card.content--top .card--item {
       align-items: flex-start; }
       .card.content--top .card--item > .card--content {
         justify-content: flex-start; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 48em) {
     .card.content--bottom .card--item {
       align-items: flex-end; }
       .card.content--bottom .card--item > .card--content {
         justify-content: flex-end; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 48em) {
     .card.content--half-width .card--content {
       width: 50%; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 48em) {
     .card.content--quarter-width .card--content {
       width: 25%; } }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 48em) {
     .card.content--three-quarter-width .card--content {
       width: 75%; } }
   .card--switch .card--item-1 {
