@@ -59,7 +59,14 @@
 	
 	// Grid Items
 	&--item {
-        border: 3px solid color(blue);
+//        border: 3px solid color(blue);
 		@include grid-item;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        
+        > .card {
+            height: 100%;
+        }
 	}
 }
