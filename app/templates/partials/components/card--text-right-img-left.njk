@@ -1,15 +1,15 @@
 {% extends "partials/components/card.njk" %}
 
-{% set card_type = "switch" %}
+{% set card_type_classes = "card--switch" %}
 
 {% block card_item_1 %}
     <div class="card--content">
-        <div class="card--title">{{ card_title }}</div>
-        <p class="card--snippet">{{ card_content }}</p>
-        <a class="card--button" href="{{ card_link_url }}">{{ card_button }}</a>
+        <div class="card--title">{{ editable_BCC_card_title }}</div>
+        <p class="card--snippet">{{ editable_BCC_card_content }}</p>
+        <a class="card--button" href="{{ editable_BCC_card_link_url }}">{{ editable_BCC_card_button }}</a>
     </div> 
 {% endblock %}
 
 {% block card_item_2 %}
-    <img class="card--img" src="{{ image_path }}" alt="{{ alt }}">
+    <img class="card--img" src="{{ editable_BCC_image_path }}" alt="{{ editable_BCC_alt }}">
 {% endblock %}

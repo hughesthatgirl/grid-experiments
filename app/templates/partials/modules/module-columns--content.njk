@@ -1,9 +1,9 @@
 {% extends "partials/layouts/layout-column-grid.njk" %}
 {% block item %}
-    {% if item.heading %}
-        <h3>{{ item.heading }}</h3>
+    {% if item.editable_BCC_heading %}
+        <h3>{{ item.editable_BCC_heading }}</h3>
     {% endif %}
-    {% if item.content %}
-        <p>{{ item.content }}</p>
+    {% if item.editable_BCC_content %}
+        <p>{{ item.editable_BCC_content }}</p>
     {% endif %}
 {% endblock %}

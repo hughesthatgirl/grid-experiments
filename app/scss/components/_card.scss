@@ -2,11 +2,29 @@
 // Card Styles
 // --------------------------------------------------------
 .card {
-    border: 5px solid color(black);
+//    border: 5px solid color(black);
 	@include grid-parent;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	text-align: center;
 	width: 100%;
+
+	&--snippet {
+		font-size: 18px;
+	}
+	
+	&--button {
+		display: block;
+		background-color: color(pink);
+		border: 2px solid color(pink);
+		color: #fff;
+		padding: 16px 32px;
+		text-decoration: none;
+		word-wrap: wrap;
+		line-height: 1.3;
+		width: 100%;
+		max-width: 200px;
+		text-align: center;
+	}
 	
 	&--img {
 		object-fit: cover;
@@ -26,25 +44,33 @@
 		width: 100%;
 		
 		> * + *  {
-			margin-top: 40px;
+			margin-top: $space-default;
 		}
 
 		&.half-width {
-			@media only screen and (min-width: 40em){
+			@include respond-to(medium){
 				width: 50%;
 			}
 		}
 		
 		&.quarter-width {
-			@media only screen and (min-width: 40em){
+			@include respond-to(medium){
 				width: 25%;
 			}
 		}
 		
 		&.three-quarter-width {
-			@media only screen and (min-width: 40em){
+			@include respond-to(medium){
 				width: 75%;
 			}
+		}
+	}
+    
+    &--title {
+		font-size: 1.25rem;
+
+		+ * {
+			margin-top: $space-less;
 		}
 	}
 	
@@ -56,7 +82,7 @@
 		align-items: center;
 		
 		&.align-self--top {
-			@include respond-to(small){
+			@include respond-to(medium){
 				align-items: flex-start;
 			
 				> .card--content {
@@ -66,7 +92,7 @@
 		}
 		
 		&.align-self--bottom {
-			@include respond-to(small){
+			@include respond-to(medium){
 				align-items: flex-end;
 			
 				> .card--content {
@@ -76,7 +102,7 @@
 		}
 		
 		&.align-self--left {
-			@include respond-to(small){
+			@include respond-to(medium){
 				justify-content: flex-start;
 				text-align: left;
 
@@ -87,7 +113,7 @@
 		}
 		
 		&.align-self--right {
-			@include respond-to(small){
+			@include respond-to(medium){
 				justify-content: flex-end;
 				text-align: right;
 
@@ -98,8 +124,11 @@
 		}
 	}
 	
+// --------------------------------------------------------
+// Position Card Content
+// --------------------------------------------------------
 	&.content--left{
-		@include respond-to(small){
+		@include respond-to(medium){
 			.card--item {
 				justify-content: flex-start;
 				text-align: left;
@@ -112,7 +141,7 @@
 	}
 
 	&.content--right {
-		@include respond-to(small){
+		@include respond-to(medium){
 			.card--item {
 				justify-content: flex-end;
 				text-align: right;
@@ -125,7 +154,7 @@
 	}
 
 	&.content--top {
-		@include respond-to(small){
+		@include respond-to(medium){
 			.card--item {
 				align-items: flex-start;
 
@@ -137,7 +166,7 @@
 	}
 
 	&.content--bottom {
-		@include respond-to(small){
+		@include respond-to(medium){
 			.card--item {
 				align-items: flex-end;
 
@@ -148,9 +177,12 @@
 		}
 	}
 
+// --------------------------------------------------------
+// Set a width on the card content
+// --------------------------------------------------------
 	&.content--half-width{
 		.card--content {
-			@include respond-to(small){
+			@include respond-to(medium){
 				width: 50%;
 			}
 		}
@@ -158,7 +190,7 @@
 
 	&.content--quarter-width{
 		.card--content {
-			@include respond-to(small){
+			@include respond-to(medium){
 				width: 25%;
 			}
 		}
@@ -166,12 +198,15 @@
 
 	&.content--three-quarter-width{
 		.card--content {
-			@include respond-to(small){
+			@include respond-to(medium){
 				width: 75%;
 			}
 		}
 	}
-	
+
+// --------------------------------------------------------
+// Card Variations
+// --------------------------------------------------------
 	&--switch {
 		.card--item-1 {
 			order: 2;
@@ -193,6 +228,7 @@
 		
 		.card--item-1 {
 			grid-column: 1/3;
+            order: 1;
 			
 		}
 		
@@ -200,31 +236,5 @@
 			// background-color: rgba(88,218,78,0.3);
 			grid-column: 1/3;
 		}
-	}
-    
-    &--title {
-		font-size: 36px;
-
-		+ * {
-			margin-top: 8px;
-		}
-	}
-
-	&--snippet {
-		font-size: 18px;
-	}
-	
-	&--button {
-		display: block;
-		background-color: color(pink);
-		border: 2px solid color(pink);
-		color: #fff;
-		padding: 16px 32px;
-		text-decoration: none;
-		word-wrap: wrap;
-		line-height: 1.3;
-		width: 100%;
-		max-width: 200px;
-		text-align: center;
 	}
 }
