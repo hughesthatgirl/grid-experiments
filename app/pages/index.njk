@@ -80,19 +80,19 @@
 {% include "partials/modules/module-columns--content.njk" %}
 
 <!-- 2 Column Card Module -->
-{% set card_bg_color = "light-gray" %}
 {% set row_width = "wide" %}
 {% set column_classes = "md--2-col" %}
 {% set editable_BCC_bg_color = "white" %}
 {% set editable_BCC_text_color = "black" %}
 {% set items = [
     {
-      "editable_BCC_image_path" : "images/test_image.jpg",
+      "editable_BCC_image_path" : "images/test_bottom_img.png",
       "editable_BCC_alt" : "alt text",
       "editable_BCC_card_title" : "Find the Perfect Vitamix Blender",
       "editable_BCC_card_content" : "Our Blender Recommender is a fantastic matchmaker-- linking your cooking style with a machine that is made just for you.",
       "editable_BCC_card_link_url" : "#",
-      "editable_BCC_card_button" : "Button Text"
+      "editable_BCC_card_button" : "Button Text",
+      "card_bg_color" : "blue"
     },
     {
       "editable_BCC_image_path" : "images/test_image.jpg",
@@ -100,7 +100,8 @@
       "editable_BCC_card_title" : "Download the app",
       "editable_BCC_card_content" : "Download the Vitamix app for iOS and Android to unlock your blender's full potential with 17 programs and 500+ recipes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate tristique iaculis.",
       "editable_BCC_card_link_url" : "#",
-      "editable_BCC_card_button" : "Button Text"
+      "editable_BCC_card_button" : "Button Text",
+      "card_bg_color" : "light-gray"
     }
   ]
 %}
