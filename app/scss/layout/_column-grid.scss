@@ -11,7 +11,7 @@
 // ------------------------------------------
 .column-grid {
 	@include grid-parent;
-	grid-gap: $space-default;
+	grid-gap: $vmx_base_spacing;
 	
 	&--2-col {
 		grid-template-columns: repeat(2, 1fr);
@@ -45,11 +45,11 @@
 	// Place these classes on the column-grid parent
 	&.grid-gap {
 		&--less {
-			grid-gap: $space-less;
+			grid-gap: $vmx_half_spacing;
 		}
 		
 		&--more {
-			grid-gap: $space-more;
+			grid-gap: $vmx_double_spacing;
 		}
 		
 		&--none {
