@@ -235,7 +235,7 @@ footer {
   .card--content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     height: 100%;
@@ -309,8 +309,9 @@ footer {
   @media only screen and (min-width: 64.0625em) {
     .card.content--three-quarter-width .card--content {
       width: 800px; } }
-  .card--switch .card--item-1 {
-    order: 2; }
+  @media only screen and (min-width: 48em) {
+    .card--switch .card--item-1 {
+      order: 2; } }
   .card--stacked .card--item-1,
   .card--stacked .card--item-2 {
     grid-column: 1/3; }
