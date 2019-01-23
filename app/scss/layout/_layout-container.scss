@@ -18,4 +18,17 @@
 		padding-top: $vmx_half_spacing;
 		padding-bottom: $vmx_half_spacing;
 	}
+	
+	// Add an hr between rows inside a module-container
+	// Set this class on module-container element
+	&--divider {
+		.layout-row + .layout-row::before{
+			content:'';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: color(light-gray);
+			margin-bottom: $vmx_double_spacing;
+		}
+	}
 }
