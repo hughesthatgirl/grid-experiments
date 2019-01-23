@@ -11,5 +11,10 @@
 {% endblock %}
 
 {% block card_item_2 %}
-    <img class="card--img" src="{{ editable_BCC_image_path }}" alt="{{ editable_BCC_alt }}">
+    <picture>
+            <source media="(max-width: 768px)" srcset="{{ editable_BCC_hero_img_small }}">
+            <source media="(max-width: 1024px)" srcset="{{ editable_BCC_hero_img_medium }}">
+            <source media="(min-width: 1600px)" srcset="{{ editable_BCC_hero_img_large_default }}">
+            <img class="card--img" src="{{ editable_BCC_hero_img_large_default }}" alt="{{ editable_BCC_hero_alt }}">
+        </picture>
 {% endblock %}

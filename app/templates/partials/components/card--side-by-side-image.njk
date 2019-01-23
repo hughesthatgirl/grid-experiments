@@ -1,9 +1,19 @@
 {% extends "partials/components/card.njk" %}
 
 {% block card_item_1 %}
-    <img class="card--img" src="{{ editable_BCC_image_path_1 }}" alt="{{ editable_BCC_alt_1 }}">
+    <picture>
+            <source media="(max-width: 768px)" srcset="{{ editable_BCC_hero_img_small_1 }}">
+            <source media="(max-width: 1024px)" srcset="{{ editable_BCC_hero_img_medium_1 }}">
+            <source media="(min-width: 1600px)" srcset="{{ editable_BCC_hero_img_large_default_1 }}">
+            <img class="card--img" src="{{ editable_BCC_hero_img_large_default_1 }}" alt="{{ editable_BCC_hero_alt_1 }}">
+        </picture>
 {% endblock %}
 
 {% block card_item_2 %}
-    <img class="card--img" src="{{ editable_BCC_image_path_2 }}" alt="{{ editable_BCC_alt_2 }}">
+    <picture>
+            <source media="(max-width: 768px)" srcset="{{ editable_BCC_hero_img_small_2 }}">
+            <source media="(max-width: 1024px)" srcset="{{ editable_BCC_hero_img_medium_2 }}">
+            <source media="(min-width: 1600px)" srcset="{{ editable_BCC_hero_img_large_default_2 }}">
+            <img class="card--img" src="{{ editable_BCC_hero_img_large_default_2 }}" alt="{{ editable_BCC_hero_alt_2 }}">
+        </picture>
 {% endblock %}
