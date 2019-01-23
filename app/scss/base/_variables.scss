@@ -2,24 +2,26 @@
 // Colors
 // ------------------------------------------
 $colors: (
-    pink: #d63043,
-    orange: #ff6f59,
-    blue: #323f48,
-    purple: #565299,
-    green: #58da4e,
-    gray: #cccccc,
-    light-gray: #f2f2f2,
-    dark-gray: #5d5d5d,
-    white: #ffffff,
-    black: #000000
+    blue: #333F48,
+	light-blue: #40596b,
+	opaque-blue: #ddebec,
+	red: #730912,
+    orange: #f17923,
+    green: #658d1b,
+    gray: #ccc,
+	light-gray: #999,
+    dark-gray: #333,
+	white: #fff,
+	off-white: #fafafa,
+    black: #000
 );
 
 // ------------------------------------------
 // Spacing
 // ------------------------------------------
-$space-default: 24px;
-$space-less: calc(#{$space-default} / 2);
-$space-more: calc(#{$space-default} * 2);
+$vmx_base_spacing: 20px;
+$vmx_half_spacing: calc(#{$vmx_base_spacing} / 2);
+$vmx_double_spacing: calc(#{$vmx_base_spacing} * 2);
 
 // ------------------------------------------
 // Breakpoints
