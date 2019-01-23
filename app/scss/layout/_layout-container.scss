@@ -2,16 +2,20 @@
 // Sets top and bottom padding
 // Sets default spacing between it's child elements
 // ------------------------------------------
-.layout-container {
-//    border: 3px solid color(orange);
+.module-container {
 	@include grid-parent;
-	grid-row-gap: $space-more;
-	padding-top: $space-more;
-	padding-bottom: $space-more;
+	grid-row-gap: $vmx_double_spacing;
+	padding-top: $vmx_double_spacing;
+	padding-bottom: $vmx_double_spacing;
 	text-align: center;
 	
 	&.no-padding {
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+	
+	&.padding--less {
+		padding-top: $vmx_half_spacing;
+		padding-bottom: $vmx_half_spacing;
 	}
 }
