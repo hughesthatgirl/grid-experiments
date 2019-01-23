@@ -10,7 +10,6 @@
 // of grid-gap or to remove it completely
 // ------------------------------------------
 .column-grid {
-//    border: 3px solid color(pink);
 	@include grid-parent;
 	grid-gap: $space-default;
 	
@@ -42,7 +41,8 @@
 		@include create-columns(xl);
 	}
 	
-	// Add Grid Gap to Grid Items
+	// Adds Grid Gap to Grid Items
+	// Place these classes on the column-grid parent
 	&.grid-gap {
 		&--less {
 			grid-gap: $space-less;
@@ -59,14 +59,27 @@
 	
 	// Grid Items
 	&--item {
-//        border: 3px solid color(blue);
 		@include grid-item;
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        
-        > .card {
-            height: 100%;
-        }
+		
+		> * + * {
+			margin-top: $vmx_base_spacing;
+		}
+
+		@include headings(){
+			+ * {
+				margin-top: $vmx_half_spacing;
+			}
+		}
+	}
+	
+	// Add borders to grid items
+	// Set this class on the grid parent element
+	&--item-borders {
+		.column-grid--item {
+			border: 1px solid color(light-gray);
+		}
 	}
 }
